@@ -2,6 +2,15 @@
 
 using namespace std;
 
+int getsum (int arr[], int n) {
+  int sum = 0;
+  for (int i=0; i<n; i++) {
+    sum += arr[i];
+  }
+
+  return sum;
+}
+
 int main () {
 
   int n;
@@ -13,6 +22,8 @@ int main () {
   for (int i=0;i<n;i++) {
     cin >> arr[i];
   }
+
+  cout << "Answer: " << getsum(arr, n) << endl;
   
   return 0;
 }
