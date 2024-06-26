@@ -44,7 +44,16 @@ int binary_search (vector<int>& arr, int s, int e, int key) {
     }
     return -1;
 }
-
+//searching and rotate the element at k th index
+int search(vector<int>& arr, int n, int k)
+{
+    int pivot = getpivot(arr, n);
+    if (k >= arr[pivot] && k <= arr[n - 1]) {
+        return binary_search(arr, pivot, n-1, k);
+    } else {
+        return binary_search(arr, 0, pivot-1, k);
+    }
+}
 
 int main () {
 
