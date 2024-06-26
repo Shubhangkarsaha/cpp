@@ -22,6 +22,28 @@ int getpivot (vector<int>& arr, int size) {
     return s;
 }
 
+// binary search to find the pivot index in logn time complexity
+int binary_search (vector<int>& arr, int s, int e, int key) {
+
+    int start = s;
+    int end = e;
+
+    //using this formula to handle the range of integer not exceeding INT_MAX
+    int mid = start + ((end - start) / 2);
+
+    while (start <= end) {
+
+        if (key == arr[mid]) {
+            return mid;
+        } else if (key < arr[mid]) {
+            end = mid - 1;
+        } else {
+            start = mid + 1;
+        }
+        mid = start + ((end - start) / 2);
+    }
+    return -1;
+}
 
 
 int main () {
