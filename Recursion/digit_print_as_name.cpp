@@ -13,6 +13,8 @@ void sayDigit (int n, string arr[]) {
 
     sayDigit(n, arr);
 
+    //printing the digit name in english at the time when recursion call back
+
     cout << arr[digit] << " ";
 }
 
