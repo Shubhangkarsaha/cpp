@@ -1,15 +1,16 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void print (int arr[], int s, int e) {
+void print (vector<int> &arr, int s, int e) {
 
     for (int i=s; i<e; i++) {
         cout << arr[i] << " ";
     }cout << endl;
 }
 
-bool binarySearch (int arr[], int s, int e, int k) {
+bool binarySearch (vector<int> &arr, int s, int e, int k) {
 
     cout << endl;
     print (arr, s, e);
@@ -31,11 +32,13 @@ bool binarySearch (int arr[], int s, int e, int k) {
 
 int main () {
 
-    int arr[10] = {1,2,4,13,14,15,18,23,25,29};
+    vector<int> arr = {1,2,4,13,14,15,18,23,25,29};
 
     int k = 25;
 
-    if (binarySearch(arr, 0, 10-1, k)) {
+    int n = arr.size();
+
+    if (binarySearch(arr, 0, n-1, k)) {
         cout << "Element found." << endl;
     } else {
         cout << "Element not found." << endl;
