@@ -175,5 +175,8 @@ int main () {
     cout << "head -> " << head -> data << endl;
     cout << "Tail -> " << tail -> data << endl;
 
+    deleteNode(3, head, tail);
+    printNode(head);
+
     return 0;
 }
