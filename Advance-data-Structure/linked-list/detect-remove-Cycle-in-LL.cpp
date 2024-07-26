@@ -14,6 +14,7 @@
 
 *************************************************/
 
+//Detecting Loop using floyd detection Algorithm
 Node* floydCycleDetect (Node* &head) {
 
     if (head == NULL) {
@@ -38,6 +39,7 @@ Node* floydCycleDetect (Node* &head) {
     return NULL;
 }
 
+//getting the starting node
 Node* getStartingNode (Node* head) {
 
     if (head == NULL) {
@@ -59,6 +61,7 @@ Node* getStartingNode (Node* head) {
     return slow;
 }
 
+//remove the cycle from the loop
 Node *removeLoop(Node *head)
 {
     if (head == NULL) {
