@@ -61,6 +61,7 @@ Node* getStartingNode (Node* head) {
     return slow;
 }
 
+
 //remove the cycle from the loop
 Node *removeLoop(Node *head)
 {
