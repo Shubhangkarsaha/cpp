@@ -1,5 +1,4 @@
-/*
-Following is the class structure of the Node class:
+// Following is the class structure of the Node class:
 
 class Node
 {
@@ -22,7 +21,7 @@ public:
         this->next = next;
     }
 };
-*/
+
 
 void insertAtTail (Node* &tail, Node* curr) {
     tail -> next = curr;
