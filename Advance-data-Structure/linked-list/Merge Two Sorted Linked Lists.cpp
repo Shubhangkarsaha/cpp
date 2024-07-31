@@ -67,6 +67,7 @@ Node<int>* solve(Node<int>* first, Node<int>* second) {
     return first;
 }
 
+//sorting the linked lists before merge
 Node<int>* sortTwoLists(Node<int>* first, Node<int>* second)
 {
 
