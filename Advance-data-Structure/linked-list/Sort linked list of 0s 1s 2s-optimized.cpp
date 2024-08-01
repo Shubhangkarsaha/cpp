@@ -29,7 +29,8 @@ void insertAtTail (Node* &tail, Node* curr) {
 } 
 
 Node* sortList(Node *head){
-    
+
+    //taking dummy nodes to separatly sort the linked list
    Node* zeroHead = new Node(-1);
    Node* zeroTail = zeroHead;
    Node* oneHead = new Node(-1);
