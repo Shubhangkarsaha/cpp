@@ -1,5 +1,7 @@
 #include <bits/stdc++.h> 
 
+// the following question is solved by tail recursive solution
+
 void StackTraverse (stack<int>& inputStack, int count, int N) {
 
    //If stack is empty
