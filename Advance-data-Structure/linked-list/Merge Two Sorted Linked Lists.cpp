@@ -48,7 +48,7 @@ Node<int>* solve(Node<int>* first, Node<int>* second) {
         next2 = curr2 -> next;
         curr2 -> next = next1;
 
-    //update pointers
+    //update pointers by one step forward
         curr1 = curr2;
         curr2 = next2;
       } else {
