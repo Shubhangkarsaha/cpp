@@ -62,8 +62,8 @@ bool validation(Node *head, Node *res) {
 }
 
 
-// } Driver Code Ends
-/* Link list Node
+//} Driver Code Ends
+//Link list Node
 struct Node {
     int data;
     Node *next;
@@ -74,7 +74,7 @@ struct Node {
         next = NULL;
         arb = NULL;
     }
-};*/
+};
 
 class Solution {
     
