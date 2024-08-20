@@ -9,6 +9,7 @@ public:
     }
     
     void push(long long val) {
+        
         // for first element
         if (s.empty()) {
             s.push(val);
@@ -24,6 +25,7 @@ public:
     }
     
     int pop() {
+        // check underflow
         if (s.empty()) {
             return -1;
         }
@@ -41,6 +43,7 @@ public:
     }
     
     int top() {
+        // check availability of element
         if (s.empty()) {
             return -1;
         }
@@ -52,7 +55,8 @@ public:
             return curr;
         }
     }
-    
+
+//returning the min element from stack
     int getMin() {
         if (s.empty()) {
             return -1;
